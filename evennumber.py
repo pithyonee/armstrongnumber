@@ -14,22 +14,22 @@ while True:
     a = input("First Number:")
     b = input("Second number:")
 
-    if (a == "q" or a == "Q"):
+    if a == "q" or a == "Q":
         break
 
-    elif (b == "q" or b == "Q"):
+    elif b == "q" or b == "Q":
         break
 
     else:
         a = int(a)
         b = int(b)
 
-        if (a <= b):
-            Numlist = list(range(a,b+1))
-            even_number = [i for i in Numlist if (i % 2 == 0)]
+        if a <= b:
+            numbers = list(range(a, b + 1))
+            even_number = [i for i in numbers if (i % 2 == 0)]
 
         else:
-            Numlist = list(range(b,a+1))
-            even_number = [i for i in Numlist if (i % 2 == 0)]
+            numbers = list(range(b, a + 1))
+            even_number = [i for i in numbers if (i % 2 == 0)]
 
         print(even_number)
